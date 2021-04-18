@@ -41,8 +41,8 @@ class BusinessFragment : Fragment() {
             ArticleListener {
                     url: String? -> this
                     .findNavController()
-                    .navigate(TopStoriesFragmentDirections
-                    .actionTopStoriesFragmentToWebViewFragment(url))
+                    .navigate(BusinessFragmentDirections
+                    .actionBusinessFragmentToWebViewFragment(url))
             }
         )
         binding.recyclerView.adapter = adapter
