@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/top_stories"
+        android:id="@+id/topStoriesFragment"
+        android:checkable="true"
+        android:checked="true"/>
+    <item android:title="@string/india"
+        android:id="@+id/indiaFragment"
+        android:checkable="true"
+        android:checked="true"/>
+    <item android:title="@string/business"
+        android:id="@+id/businessFragment"
+        android:checkable="true"
+        android:checked="true"/>
+    <item android:title="@string/entertainment"
+        android:id="@+id/entertainmentFragment"
+        android:checkable="true"
+        android:checked="true"/>
+    <item android:title="@string/health"
+        android:id="@+id/healthFragment"
+        android:checkable="true"
+        android:checked="true"/>
+</menu>

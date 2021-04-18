@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/topStoriesFragment">
+
+    <fragment
+        android:id="@+id/topStoriesFragment"
+        android:name="in.summachar.android.ui.TopStoriesFragment"
+        android:label="fragment_top_stories"
+        tools:layout="@layout/fragment_top_stories" >
+        <action
+            android:id="@+id/action_topStoriesFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment"
+            app:popUpTo="@id/topStoriesFragment" />
+        <argument
+            android:name="url"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='"www.google.com"' />
+    </fragment>
+    <fragment
+        android:id="@+id/indiaFragment"
+        android:name="in.summachar.android.ui.IndiaFragment"
+        android:label="fragment_india"
+        tools:layout="@layout/fragment_india" >
+        <action
+            android:id="@+id/action_indiaFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment"
+            app:popUpTo="@id/indiaFragment" />
+        <argument
+            android:name="url"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='"www.google.com"' />
+    </fragment>
+    <fragment
+        android:id="@+id/businessFragment"
+        android:name="in.summachar.android.ui.BusinessFragment"
+        android:label="fragment_business"
+        tools:layout="@layout/fragment_business" >
+        <action
+            android:id="@+id/action_businessFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment"
+            app:popUpTo="@id/businessFragment" />
+        <argument
+            android:name="url"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='"www.google.com"' />
+    </fragment>
+    <fragment
+        android:id="@+id/entertainmentFragment"
+        android:name="in.summachar.android.ui.EntertainmentFragment"
+        android:label="fragment_entertainment"
+        tools:layout="@layout/fragment_entertainment" >
+        <action
+            android:id="@+id/action_entertainmentFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment"
+            app:popUpTo="@id/entertainmentFragment" />
+        <argument
+            android:name="url"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='"www.google.com"' />
+    </fragment>
+    <fragment
+        android:id="@+id/healthFragment"
+        android:name="in.summachar.android.ui.HealthFragment"
+        android:label="fragment_health"
+        tools:layout="@layout/fragment_health" >
+        <action
+            android:id="@+id/action_healthFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment"
+            app:popUpTo="@id/healthFragment" />
+        <argument
+            android:name="url"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='"www.google.com"' />
+    </fragment>
+    <fragment
+        android:id="@+id/webViewFragment"
+        android:name="in.summachar.android.ui.WebViewFragment"
+        android:label="fragment_web_view"
+        tools:layout="@layout/fragment_web_view" >
+        <argument
+            android:name="url"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue='"www.google.com"' />
+    </fragment>
+</navigation>
