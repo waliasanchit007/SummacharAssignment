@@ -1,8 +1,2 @@
 include ':app'
 rootProject.name = "Summachar Intern Assignment"
-buildCache {
-    local {
-        // Set local build cache directory.
-        directory = "C:/build-cache"
-    }
-}
