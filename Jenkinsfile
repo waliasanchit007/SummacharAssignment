@@ -3,6 +3,10 @@ try {
   
     node {
       
+              stage('Preparation') { 
+            git  url: 'https://github.com/prashant-bhatasana/demoApp/'
+        }
+      
         stage('Dependencies') {
                 sh 'sudo npm install -g react-native-cli'
                 sh 'npm install'
