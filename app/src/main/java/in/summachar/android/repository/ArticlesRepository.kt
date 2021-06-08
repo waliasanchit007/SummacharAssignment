@@ -23,6 +23,7 @@ class ArticlesRepository(private val database: ArticlesDatabase) {
 //    lateinit var business:LiveData<String?>
 //    lateinit var entertainment:LiveData<String?>
 //    lateinit var health: LiveData<String?>
+     //random
 
      suspend fun checkIfDatabaseIsEmpty(): Boolean{
         return withContext(Dispatchers.IO){ database.articleDao.getAllDatabase().isNullOrEmpty() }
