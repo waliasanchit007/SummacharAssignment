@@ -30,7 +30,7 @@ class BusinessFragment : Fragment() {
         )
         binding.lifecycleOwner = viewLifecycleOwner
 
-        //ViewModel
+        //ViewModel,msdnfsdfkjhsdfn
         viewModel = activity?.run {
             ViewModelProvider(this, MainActivityViewModel.Factory(this.application))
                 .get(MainActivityViewModel::class.java)
