@@ -19,20 +19,4 @@ class ExampleUnitTest {
     fun addition_isCorrect() {
         assertEquals(4, 2 + 2)
     }
-
-    @Test
-    fun `know if api is responding`(){
-        runBlocking {
-            val article = withContext(Dispatchers.IO){ApiClient.api.getTopHeadlines().body()?.articles}
-            assertNotNull(article)
-        }
-    }
-
-    @Test
-    fun `get top stories`(){
-        runBlocking {
-            val article = ArticleRepo.getTopStoriesArticles()
-            assertNotNull(article)
-        }
-    }
 }
